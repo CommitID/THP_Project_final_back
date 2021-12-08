@@ -4,6 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   belongs_to :package
+  validates :phone, length:{in:7..20}, uniqueness: true
+  validates :first_name, length:{in:2..20}, presence: true
+  validates :last_name, length:{in:2..20}, presence: true
+  validates :address, presence: true
   has_many :rents
   has_many :ranks
   has_many :comments

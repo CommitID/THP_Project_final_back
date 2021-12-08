@@ -1,0 +1,160 @@
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6051951425217227250)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20211207164926)
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.6ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207164926"]]
+  [1m[36mTRANSACTION (51.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6051951425217227250)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6051951425217227250)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCarts (20211207163846)
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE "carts"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207163846"]]
+  [1m[36mTRANSACTION (38.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFavorites (20211207162654)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207162654"]]
+  [1m[36mTRANSACTION (32.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20211207161125)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.5ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207161125"]]
+  [1m[36mTRANSACTION (28.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRanks (20211207155735)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE "ranks"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207155735"]]
+  [1m[36mTRANSACTION (24.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRents (20211207154137)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "rents"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207154137"]]
+  [1m[36mTRANSACTION (30.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20211207152354)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "images"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207152354"]]
+  [1m[36mTRANSACTION (33.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinGameAndTags (20211207150908)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mDROP TABLE "join_game_and_tags"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207150908"]]
+  [1m[36mTRANSACTION (24.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20211207141733)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207141733"]]
+  [1m[36mTRANSACTION (50.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20211207135627)
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "tags"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207135627"]]
+  [1m[36mTRANSACTION (44.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePackages (20211207134259)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "packages"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207134259"]]
+  [1m[36mTRANSACTION (48.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGames (20211207130643)
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "games"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20211207130643"]]
+  [1m[36mTRANSACTION (24.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6051951425217227250)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6051951425217227250)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGames (20211207130643)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (201.4ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "name" character varying, "price" integer, "creator" character varying, "editor" character varying, "description" text, "min_player" integer, "max_player" integer, "min_age" integer, "release_date" date, "sell_stock" integer, "rent_stock" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207130643"]]
+  [1m[36mTRANSACTION (34.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePackages (20211207134259)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (193.6ms)[0m  [1m[35mCREATE TABLE "packages" ("id" bigserial primary key, "game_number" integer, "name" character varying, "price" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207134259"]]
+  [1m[36mTRANSACTION (48.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20211207135627)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (183.0ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207135627"]]
+  [1m[36mTRANSACTION (25.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20211207141733)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (168.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "first_name" character varying, "last_name" character varying, "address" character varying, "phone" character varying, "admin" boolean DEFAULT FALSE, "subscription_ending" date DEFAULT NULL, "package_id" bigint, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (75.4ms)[0m  [1m[35mCREATE INDEX "index_users_on_package_id" ON "users" ("package_id")[0m
+  [1m[35m (97.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (75.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207141733"]]
+  [1m[36mTRANSACTION (27.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinGameAndTags (20211207150908)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (84.2ms)[0m  [1m[35mCREATE TABLE "join_game_and_tags" ("id" bigserial primary key, "game_id" bigint, "tag_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (96.7ms)[0m  [1m[35mCREATE INDEX "index_join_game_and_tags_on_game_id" ON "join_game_and_tags" ("game_id")[0m
+  [1m[35m (75.5ms)[0m  [1m[35mCREATE INDEX "index_join_game_and_tags_on_tag_id" ON "join_game_and_tags" ("tag_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207150908"]]
+  [1m[36mTRANSACTION (28.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20211207152354)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (171.5ms)[0m  [1m[35mCREATE TABLE "images" ("id" bigserial primary key, "game_id" bigint, "public_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (75.4ms)[0m  [1m[35mCREATE INDEX "index_images_on_game_id" ON "images" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207152354"]]
+  [1m[36mTRANSACTION (28.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRents (20211207154137)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (84.2ms)[0m  [1m[35mCREATE TABLE "rents" ("id" bigserial primary key, "game_id" bigint, "user_id" bigint, "quantity" integer, "status" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (63.9ms)[0m  [1m[35mCREATE INDEX "index_rents_on_game_id" ON "rents" ("game_id")[0m
+  [1m[35m (65.4ms)[0m  [1m[35mCREATE INDEX "index_rents_on_user_id" ON "rents" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207154137"]]
+  [1m[36mTRANSACTION (50.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRanks (20211207155735)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (71.8ms)[0m  [1m[35mCREATE TABLE "ranks" ("id" bigserial primary key, "game_id" bigint, "user_id" bigint, "note" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (63.7ms)[0m  [1m[35mCREATE INDEX "index_ranks_on_game_id" ON "ranks" ("game_id")[0m
+  [1m[35m (86.7ms)[0m  [1m[35mCREATE INDEX "index_ranks_on_user_id" ON "ranks" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207155735"]]
+  [1m[36mTRANSACTION (39.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20211207161125)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (138.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "game_id" bigint, "user_id" bigint, "content" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (97.3ms)[0m  [1m[35mCREATE INDEX "index_comments_on_game_id" ON "comments" ("game_id")[0m
+  [1m[35m (53.2ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207161125"]]
+  [1m[36mTRANSACTION (37.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFavorites (20211207162654)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (104.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "game_id" bigint, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (64.3ms)[0m  [1m[35mCREATE INDEX "index_favorites_on_game_id" ON "favorites" ("game_id")[0m
+  [1m[35m (64.5ms)[0m  [1m[35mCREATE INDEX "index_favorites_on_user_id" ON "favorites" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207162654"]]
+  [1m[36mTRANSACTION (38.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCarts (20211207163846)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (128.2ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "user_id" bigint, "paid" boolean, "stripe_customer_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (65.2ms)[0m  [1m[35mCREATE INDEX "index_carts_on_user_id" ON "carts" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207163846"]]
+  [1m[36mTRANSACTION (82.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20211207164926)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (72.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "cart_id" bigint, "package_id" bigint, "game_id" bigint, "quantity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (64.1ms)[0m  [1m[35mCREATE INDEX "index_orders_on_cart_id" ON "orders" ("cart_id")[0m
+  [1m[35m (86.3ms)[0m  [1m[35mCREATE INDEX "index_orders_on_package_id" ON "orders" ("package_id")[0m
+  [1m[35m (65.2ms)[0m  [1m[35mCREATE INDEX "index_orders_on_game_id" ON "orders" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207164926"]]
+  [1m[36mTRANSACTION (38.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6051951425217227250)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
